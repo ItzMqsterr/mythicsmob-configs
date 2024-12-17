@@ -1,0 +1,16 @@
+#!/bin/bash
+
+REPO_PATH="C:\Users\delfi\Desktop\Config"
+SERVER_PATH="/srv/minecraft/plugins/MythicMobs"
+
+cd $REPO_PATH
+git fetch origin master
+git pull -X theirs origin master
+echo "Repository aggioranta con successo"
+cp -r $REPO_PATH/* $SERVER_PATH/
+
+
+
+
+echo "Sincronizzazione completata. Si raccomanda sempre di controllare manualmente se i file sono stati copiati"
+
