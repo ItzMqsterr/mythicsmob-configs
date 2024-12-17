@@ -1,11 +1,11 @@
 #!/bin/bash
 
-REPO_PATH="/home/mythicsmob-configs/MythicMobs"
-SERVER_PATH="/srv/minecraft/plugins/MythicMobs"
+REPO_PATH="/home/mythicsmob-configs/"
+SERVER_PATH="/srv/minecraft/plugins/MythicMobs/"
 
 cd $REPO_PATH
-git fetch origin master
-git pull -X theirs origin master
+git fetch origin main
+git pull -X theirs origin main
 echo "Repository aggioranta con successo e pronta per copiare i file"
 cp -r $REPO_PATH/* $SERVER_PATH/
 
