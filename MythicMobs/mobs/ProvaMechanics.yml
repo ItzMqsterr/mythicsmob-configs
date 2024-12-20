@@ -1,0 +1,29 @@
+Magic:
+  Type: parrot
+  Display: '&bTipregofunziona'
+  Health: 100
+  Damage: 2
+  Armor: 5
+  Faction: Hostile 
+  Disguise: skeleton
+  BossBar:
+    Enabled: true
+    Title: 'Magic is here'
+    Range: 20
+    Color: RED
+    Style: SOLID
+    CreateFog: true 
+    DarkenSky: true 
+  AITargetSelectors:
+    - 0 clear 
+    - 1 player
+  Options:
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Despawn: false
+    PreventSunburn: true
+    NoAI: false
+  Skills:
+    - skill{s=ItemProjectile} @Target ~onTimer:10

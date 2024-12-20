@@ -1,0 +1,26 @@
+Dallo:
+  Type: zombie
+  Display: '&6Dallo'
+  Health: 100
+  Damage: 1
+  Armor: 5
+  Faction: bad 
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+    PreventSunburn: true 
+  AItargetSelectors:
+  - 0 clear
+  - 1 players
+  AIGoalSelectors:
+    - clear
+    - 1 players
+  Skills:
+   - shoot{type=ARROW;velocity=0.2;damage=1} @onAttacked ~onTimer:0.2
+   - delay 10
+   - shoot{type=ArrowBarrage;velocity=5;damage=1}
+
+
+

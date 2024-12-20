@@ -1,0 +1,28 @@
+Tipregofunziona:
+  Type: hoglin
+  Display: '&bTipregofunziona'
+  Health: 100
+  Damage: 2
+  Armor: 5
+  Parent: false
+  Options:
+    AlwaysShowName: true
+    PreventRandomEquipment: true
+    PreventItemPickup: true
+    PreventOtherDrops: true
+    Despawn: false
+    PreventSunburn: true
+    MaxCombatDistance: 10
+    FollowRange: 10
+    MovementSpeed: 0.3
+    Flying: true 
+    NoAI: false
+  AIGoalSelectors:
+    - 0 clear
+    - 1 randomfly
+  Skills:
+    - skill{s=Feathers}
+    - Delay 10
+    - skill{s=SmashAttack}
+
+  

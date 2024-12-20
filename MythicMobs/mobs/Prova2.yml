@@ -1,0 +1,20 @@
+FeatherShooter:
+  Type: zombie
+  Display: '&bFeather Blaster'
+  Health: 50
+  Damage: 0
+  Velocity: 0.2
+  Faction: bad
+  Options:
+    AlwaysShowName: true
+    PreventOtherDrops: true
+    PreventSunburn: true
+  AIGoalSelectors:
+    - 0 clear
+    - wander
+  AITargetSelectors:
+    - 0 clear 
+  Skills:
+    - damage{a=2} @PIR{r=5} ~onDamaged 
+      skill @trigger ~onDamaged 0.1 
+    - projectile{type=Arrow;velocity=2;damage=4;knockback=1} @PIR {r=15}
